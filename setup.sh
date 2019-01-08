@@ -27,6 +27,7 @@ if ! which docker >/dev/null 2>&1; then
     stable"
   apt-get update
   apt-get install -y docker-ce
+  groupadd -G docker vagrant
 fi
 
 # Install golang
